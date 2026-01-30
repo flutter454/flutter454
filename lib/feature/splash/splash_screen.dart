@@ -118,6 +118,7 @@ class _SplashScreenState extends State<SplashScreen> {
             //     ],
             //   ),
             // ),
+            //screen
             const SizedBox(height: 8),
 
             // Subtitle
