@@ -1,0 +1,53 @@
+{
+    // VS Code launch configuration version
+    "version": "0.2.0",
+    "configurations": [
+        // 🔹 Attach to a Flutter app already running on a device
+        // Use this when you start app using: flutter run
+        {
+            "name": "Flutter: Attach to Device",
+            "type": "dart",
+            "request": "attach"
+        },
+        // 🔹 Attach to any Dart process
+        // Mostly used for backend Dart apps or advanced debugging
+        {
+            "name": "Dart: Attach to Process",
+            "type": "dart",
+            "request": "attach"
+        },
+        // 🔹 Launch Chrome manually on localhost
+        // Usually not needed for Flutter Web
+        // Flutter automatically handles Chrome launch
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        // 🔹 Default Flutter Debug Mode
+        // This is what you use daily for development
+        {
+            "name": "chatloop",
+            "request": "launch",
+            "type": "dart"
+        },
+        // 🔹 Profile Mode
+        // Used to test performance (almost release but with profiling)
+        {
+            "name": "chatloop (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        // 🔹 Release Mode
+        // Used to test production behavior (no debugging)
+        {
+            "name": "chatloop (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
